@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from crog import Crog
+from crog.crog import Crog
 import os
 import sys
 
-cron = Crog('sendemail', 15, 0) ## all days at 00:15
+cron = Crog('helloworld', 15, 0) ## all days at 00:15
 cron.user = 'herrer'
 
 params = [
