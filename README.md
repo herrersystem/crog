@@ -3,7 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/status/crog.svg)](https://pypi.python.org/pypi/apize/)
 [![PyPI](https://img.shields.io/pypi/pyversions/crog.svg)](https://pypi.python.org/pypi/apize/)
 
-Generate cronjobs for scripts python.
+Generate cronjobs for python scripts.
 
 ## Installation
 
@@ -27,13 +27,15 @@ Class accept 6 arguments:
 * week_day (__str__ or __int__): number of days between each time the cron job runs, or the day of the month on which you wish to run the cron job. (default: '*')
 * month_day (__str__ or __int__): days of the week on which you wish to run the cron job. (default: '*')
 
-#### example say_hello.py
+### Example say_hello.py
 ```python
 import sys
 from crog.crog import Crog
 
 cron = Crog('helloworld', 15, 0) ## all days at 00:15
 cron.user = 'herrer'
+
+## Each lists represent 1 cronjob.
 params = [
 	['gerard'],
 	['ted']
@@ -70,8 +72,8 @@ First execution create cronjobs file.
 ```
 root@comuter# python say_hello.py
 [crop] config file helloworld was created.
-*/1 * * * * herrer /root/app/say_hello.py gerard
-*/1 * * * * herrer /root/app/say_hello.py ted
+15 0 * * * herrer /root/app/say_hello.py gerard
+15 0 * * * herrer /root/app/say_hello.py ted
 ```
 
 #### Update cronjobs
