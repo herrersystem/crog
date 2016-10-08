@@ -35,11 +35,8 @@ from crog.crog import Crog
 cron = Crog('helloworld', 15, 0) ## all days at 00:15
 cron.user = 'herrer'
 
-## Each lists represent 1 cronjob.
-params = [
-	['gerard'],
-	['ted']
-]
+## Each lists represent 1 cronjob line with these parameters.
+params = [['gerard'], ['ted']]
 
 
 @cron.load(params)
@@ -57,14 +54,6 @@ if __name__ == '__main__':
 
 ```
 
-#### Step to use
-
-* Declare Crog object.
-* Define user right for execution (default: 'root').
-* Define params if script accept arguments (optionnal).
-* Decorate main function with 'Crog.load' decorator.
-* Execute your script first time to generate cronjobs config file.
-
 #### First execution
 
 First execution create cronjobs file.
@@ -75,6 +64,14 @@ root@comuter# python say_hello.py
 15 0 * * * herrer /root/app/say_hello.py gerard
 15 0 * * * herrer /root/app/say_hello.py ted
 ```
+
+#### Step to use
+
+* Declare Crog object.
+* Define user right for execution (default: 'root').
+* Define params if script accept arguments (optionnal).
+* Decorate main function with 'Crog.load' decorator.
+* Execute your script first time to generate cronjobs config file.
 
 #### Update cronjobs
 
