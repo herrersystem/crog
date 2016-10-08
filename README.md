@@ -1,5 +1,4 @@
-# APIze
-
+# Crog
 [![PyPI](https://img.shields.io/pypi/v/crog.svg)](https://pypi.python.org/pypi/apize/)
 [![PyPI](https://img.shields.io/pypi/status/crog.svg)](https://pypi.python.org/pypi/apize/)
 [![PyPI](https://img.shields.io/pypi/pyversions/crog.svg)](https://pypi.python.org/pypi/apize/)
@@ -28,15 +27,6 @@ Class accept 6 arguments:
 * week_day (__str__ or __int__): number of days between each time the cron job runs, or the day of the month on which you wish to run the cron job. (default: '*')
 * month_day (__str__ or __int__): days of the week on which you wish to run the cron job. (default: '*')
 
-
-#### Step to use
-
-* Declare Crog object.
-* Define user right for execution (default: 'root').
-* Define params if script accept arguments (optionnal).
-* Decorate main function with 'Crog.load' decorator.
-* Execute your script first time to generate cronjobs config file.
-
 #### example say_hello.py
 ```python
 import sys
@@ -64,6 +54,14 @@ if __name__ == '__main__':
 	say_hello()
 
 ```
+
+#### Step to use
+
+* Declare Crog object.
+* Define user right for execution (default: 'root').
+* Define params if script accept arguments (optionnal).
+* Decorate main function with 'Crog.load' decorator.
+* Execute your script first time to generate cronjobs config file.
 
 #### First execution
 
