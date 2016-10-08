@@ -71,10 +71,10 @@ root@comuter# python say_hello.py
 * Define user right for execution (default: 'root').
 * Define params if script accept arguments (optionnal).
 * Decorate main function with 'Crog.load' decorator.
-* Execute your script first time to generate cronjobs config file.
+* Execute your script first time (with __root__) to generate cronjobs config file.
 
 #### Update cronjobs
 
-Just change Crog object declaration and execute your script.
+Just change Crog object declaration and execute one more time your script.
 
 
