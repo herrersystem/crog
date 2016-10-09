@@ -5,7 +5,7 @@ import os
 
 class Crog:
 	CRONJOB_DIR = '/etc/cron.d/'
-	LOG_FILE = '/var/log/crop.log'
+	LOG_FILE = '/var/log/crog.log'
 
 	def __init__(self, name, minute, hour, month='*', week_day='*', 
 		month_day='*'):
