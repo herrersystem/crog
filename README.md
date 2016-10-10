@@ -40,6 +40,7 @@ params = [['gerard'], ['ted']]
 
 
 @cron.load(params=params)
+## @cron.load() without params. 
 def say_hello():
 	if len(sys.argv) > 1:
 		name = sys.argv[1]
