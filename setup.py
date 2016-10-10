@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
 	name = 'crog',
-	version = '0.0.1',
+	version = '0.0.2',
 	author = 'herrersystem',
 	author_email = 'anton.millescamps@evhunter.fr',
 	url = 'http://github.com/herrersystem/crog',
