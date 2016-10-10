@@ -96,7 +96,9 @@ class Crog:
 			))
 
 
-	def load(self, params=[]):
+	def load(self, *args, **kwargs):
+		params = kwargs.get('params', [])
+		
 		def decorator(func):
 			def wrapper(*args, **kwargs):
 

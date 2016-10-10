@@ -13,7 +13,7 @@ params = [
 ]
 
 
-@cron.load(params)
+@cron.load(params=params)
 def say_hello():
 	if len(sys.argv) > 1:
 		name = sys.argv[1]
