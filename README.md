@@ -29,6 +29,8 @@ Class accept 6 arguments:
 
 ### Example say_hello.py
 ```python
+#!/usr/bin/env python3
+
 import sys
 from crog.crog import Crog
 
